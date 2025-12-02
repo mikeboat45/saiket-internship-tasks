@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
@@ -21,10 +25,17 @@ body {
   text-align: center;
   line-height: 1.5;
   font-family: "SourceSansPro";
+  margin: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 h1 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
@@ -93,40 +104,36 @@ hr {
 
 /* -----------------hero section------------------------*/
 #home {
-  background-color: #0115;
-  margin: 40px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 2rem;
+  padding-bottom: 30px;
 }
 
-#home img {
-  width: 250px;
-  flex: 1;
-}
-
-.hero-intro {
-  padding: 50px 0 50px;
-}
-
-.hero-intro h4 {
+#home h4 {
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-.hero-intro img {
-  height: 270px;
+#home img {
+  height: 250px;
+  width: 250px;
   object-fit: cover;
-  border-radius: 50%;
-  padding-bottom: 15px;
+  border-radius: 70%;
 }
 
 /*--------------------------about section--------------------*/
 #about {
+  width: 100%;
   display: flex;
   padding: 10px;
 }
 
 #about img {
-  width: 250px;
+  width: 33.33%;
+  max-width: 450px;
   height: 350px;
   margin-right: 15px;
   object-fit: cover;
@@ -134,10 +141,15 @@ hr {
 }
 
 .about-info {
+  flex: 1;
   display: flex;
   flex-direction: column;
   text-align: left;
   justify-content: space-around;
+}
+
+.about-info button {
+  max-width: 200px;
 }
 
 /*-------------------------project section----------------------------*/
@@ -148,7 +160,25 @@ hr {
 
 .project-items {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.project-id {
+  transition: transform 0.3s ease;
+  padding: 15px;
+}
+
+.project-id:hover {
+  transform: scale(1.05);
+}
+
+.project-id a {
+  text-decoration: none;
+  color: white;
+}
+
+.project-id a:hover {
+  color: #003049;
 }
 
 .project-id img {
@@ -186,15 +216,6 @@ label {
   font-weight: bold;
 }
 
-/* Styling for submit button */
-input[type="submit"] {
-  border: none;
-  border-radius: 4px;
-  padding: 15px 20px;
-  cursor: pointer;
-  font-size: 1.2rem;
-}
-
 input[type="submit"]:hover {
   background-color: #0056b3;
 }
@@ -223,4 +244,94 @@ footer h4 {
 
 .socials a:hover {
   color: #003049;
+}
+
+/*------------------------------responsive---------------------------------*/
+@media (max-width: 768px) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    padding: 10px 8px;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2,
+  h3,
+  h4 {
+    font-size: 1rem;
+  }
+
+  #projects button,
+  #projects h1 {
+    margin: 15px 0;
+  }
+
+  form {
+    padding: 15px;
+    margin: 0 20px;
+  }
+
+  /* About Section */
+  #about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  #about img {
+    width: 250px;
+    height: 250px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .about-info {
+    text-align: center;
+  }
+
+  .background {
+    margin-bottom: 15px;
+  }
+
+  .skills {
+    margin-bottom: 15px;
+  }
+
+  /* Projects Section */
+  .project-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-id {
+    margin: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-id img {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer > div {
+    margin-bottom: 20px;
+  }
 }

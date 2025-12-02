@@ -4,37 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebDev Portfolio</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <header>
       <nav id="navbar">
-        <p>My WebDev Portfolio</p>
-        <span>
-          <p>Home</p>
-          <p>About</p>
-          <p>Projects</p>
-        </span>
-        <p>Contact Me</p>
+        <ul>
+          <li><a href="">My WebDev Portfolio</a></li>
+          <div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </div>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
       </nav>
+      <hr />
     </header>
 
     <main>
       <section id="home">
         <div class="hero-intro">
-          <img src="" alt="" />
-          <h3>Frontend Developer</h3>
+          <img src="/Task-One/assets/images/ghibili-dp.png" alt="profile" />
+          <h4>Frontend Developer</h4>
           <p>
             I craft engaging user interfaces and interactive web experiences.
           </p>
         </div>
-        <img src="" alt="" />
+        <img
+          src="/Task-One/assets/images/christopher-gower-m_HRfLhgABo-unsplash.jpg"
+          alt="code-img"
+        />
       </section>
 
       <section id="about">
-        <img src="" alt="" />
+        <img src="/Task-One/assets/images/tech-dp.png" alt="profile" />
         <div class="about-info">
           <div class="background">
-            <h3>Background</h3>
+            <h2>Background</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum optio
               asperiores consectetur aliquid omnis eius distinctio voluptatibus
@@ -42,7 +50,7 @@
             </p>
           </div>
           <div class="skills">
-            <h3>Skills</h3>
+            <h2>Skills</h2>
             <ul>
               <li>Lorem ipsum dolor sit amet.</li>
               <li>Lorem ipsum dolor sit amet.</li>
@@ -56,9 +64,10 @@
       </section>
 
       <section id="projects">
-        <div>
+        <h1>Projects</h1>
+        <div class="project-items">
           <div class="project-id">
-            <img src="" alt="" />
+            <img src="/Task-One/assets/images/wellness.jpg" alt="" />
             <h4>Project Title</h4>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni,
@@ -66,7 +75,7 @@
             </p>
           </div>
           <div class="project-id">
-            <img src="" alt="" />
+            <img src="/Task-One/assets/images/weather.jpg" alt="" />
             <h4>Project Title</h4>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni,
@@ -74,30 +83,31 @@
             </p>
           </div>
           <div class="project-id">
-            <img src="" alt="" />
+            <img src="/Task-One/assets/images/commerce.jpg" alt="" />
             <h4>Project Title</h4>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni,
               natus. Beatae, totam.
             </p>
           </div>
-          <button>more projects...</button>
         </div>
+        <button>more projects...</button>
       </section>
 
       <section id="contact">
         <div id="send-message">
-          <h2>Contact Me</h2>
+          <h1>Contact Me</h1>
           <p>Please feel free to send a message</p>
           <form action="#" method="post" target="_blank">
-            <label for="name">Name</label><br />
+            <label for="name">Name</label>
             <input type="text" id="name" name="name" />
-            <label for="email">Email</label><br />
-            <input type="email" id="email" name="email" />
-            <label for="message">Message</label><br />
+            <br />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" /><br />
+            <label for="message">Message</label>
             <textarea name="message" id="message"></textarea>
-
-            <input type="submit" value="Send" />
+            <br />
+            <input type="submit" value="Send" class="button" />
           </form>
         </div>
       </section>

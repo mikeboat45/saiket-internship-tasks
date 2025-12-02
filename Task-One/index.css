@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ------------------Add fonts----------------------- */
+@font-face {
+  font-family: "SourceSansPro";
+  src: url(assets/fonts/SourceSansPro-Regular.otf);
+}
+
+@font-face {
+  font-family: "SourceSansPro-Light";
+  src: url(assets/fonts/SourceSansPro-ExtraLight.otf);
+}
+
+body {
+  background-color: #01161e;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+  font-family: "SourceSansPro";
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+button,
+.button {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 7px 20px;
+  background-color: #003049;
+  border: 0;
+  color: white;
+}
+
+button:hover,
+.button:hover {
+  background-color: #0115;
+}
+
+/*-----------------------------navigation------------------------*/
+header {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  font-size: 1.2rem;
+  background-color: #0115;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul div {
+  display: flex;
+  justify-content: center;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #01161e;
+}
+
+hr {
+  margin: 0;
+  border: none;
+  height: 2px;
+  background-color: #003049;
+}
+
+/* -----------------hero section------------------------*/
+#home {
+  background-color: #0115;
+  margin: 40px;
+  display: flex;
+}
+
+#home img {
+  width: 250px;
+  flex: 1;
+}
+
+.hero-intro {
+  padding: 50px 0 50px;
+}
+
+.hero-intro h4 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.hero-intro img {
+  height: 270px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding-bottom: 15px;
+}
+
+/*--------------------------about section--------------------*/
+#about {
+  display: flex;
+  padding: 10px;
+}
+
+#about img {
+  width: 250px;
+  padding-right: 10px;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*-------------------------project section----------------------------*/
+.project-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-id img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}

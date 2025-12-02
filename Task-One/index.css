@@ -25,7 +25,6 @@ body {
   text-align: center;
   line-height: 1.5;
   font-family: "SourceSansPro";
-  margin: 20px;
 }
 
 img {
@@ -71,35 +70,76 @@ header {
 
 nav {
   font-size: 1.2rem;
-  background-color: #0115;
-}
-
-nav ul {
+  background-color: #003049;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
 }
 
-ul div {
+.nav-brand {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.nav-menu {
   display: flex;
-  justify-content: center;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 400px;
+  margin: 0 20px;
 }
 
-ul li a {
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
   display: block;
   color: white;
-  padding: 14px 16px;
+  padding: 0 10px;
   text-decoration: none;
 }
 
-ul li a:hover {
-  background-color: #01161e;
+.nav-contact {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-contact:hover {
+  color: #dda15e;
+}
+
+.nav-links a:hover {
+  color: #dda15e;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
 }
 
 hr {
   margin: 0;
   border: none;
   height: 2px;
-  background-color: #003049;
+  background-color: #dda15e;
 }
 
 /* -----------------hero section------------------------*/
@@ -108,8 +148,10 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin: 2rem;
-  padding-bottom: 30px;
+  height: 70vh;
+  margin: 20px 0;
+  padding: 0 20px;
+  padding-bottom: 15px;
 }
 
 #home h4 {
@@ -126,15 +168,17 @@ hr {
 
 /*--------------------------about section--------------------*/
 #about {
-  width: 100%;
+  width: 100vw;
+  height: 60vh;
   display: flex;
-  padding: 10px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
 }
 
 #about img {
   width: 33.33%;
   max-width: 450px;
-  height: 350px;
+  height: 100%;
   margin-right: 15px;
   object-fit: cover;
   border-radius: 15px;
@@ -145,7 +189,8 @@ hr {
   display: flex;
   flex-direction: column;
   text-align: left;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 30px;
 }
 
 .about-info button {
@@ -153,6 +198,11 @@ hr {
 }
 
 /*-------------------------project section----------------------------*/
+#projects {
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
 #projects button,
 #projects h1 {
   margin: 20px 0;
@@ -164,6 +214,10 @@ hr {
 }
 
 .project-id {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.3s ease;
   padding: 15px;
 }
@@ -185,9 +239,14 @@ hr {
   width: 250px;
   height: 250px;
   object-fit: cover;
+  margin-bottom: 10px;
 }
 
 /*--------------------contact-------------------*/
+#contact {
+  padding: 0 20px;
+}
+
 #contact .button {
   margin: 20px 0;
 }
@@ -196,7 +255,7 @@ form {
   max-width: 500px;
   margin: 20px auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #dda15e;
   border-radius: 8px;
 }
 
@@ -248,14 +307,36 @@ footer h4 {
 
 /*------------------------------responsive---------------------------------*/
 @media (max-width: 768px) {
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #0115;
+    padding: 10px 0;
   }
 
-  nav ul li a {
-    padding: 10px 8px;
-    font-size: 1rem;
+  .nav-menu.nav-active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav-contact {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #003049;
+  }
+
+  .hamburger {
+    display: block;
   }
 
   h1 {

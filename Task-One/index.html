@@ -11,15 +11,20 @@
   <body>
     <header>
       <nav id="navbar">
-        <ul>
-          <li><a href="">My WebDev Portfolio</a></li>
-          <div>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
+        <a href="" class="nav-brand">My WebDev Portfolio</a>
+        <div class="nav-menu">
+          <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
           </div>
-          <li><a href="#contact">Contact Me</a></li>
-        </ul>
+          <a href="#contact" class="nav-contact">Contact Me</a>
+        </div>
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
       <hr />
     </header>
@@ -27,8 +32,10 @@
     <main>
       <section id="home">
         <img src="/Task-One/assets/images/ghibili-dp.png" alt="profile" />
-        <h1>Michael Boateng Mensah</h1>
-        <h4>Frontend Developer</h4>
+        <div>
+          <h1>Michael Boateng Mensah</h1>
+          <h4>Frontend Developer</h4>
+        </div>
       </section>
 
       <section id="about">
@@ -113,6 +120,7 @@
       </section>
     </main>
 
+    <hr />
     <footer>
       <div>
         <h4>Address</h4>

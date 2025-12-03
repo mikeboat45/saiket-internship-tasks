@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  /* background-color: #01161e; */
   color: black;
   text-align: center;
   line-height: 1.5;
@@ -44,4 +43,42 @@ nav img {
   color: white;
   padding: 0 10px;
   text-decoration: none;
+}
+
+#home {
+  height: 30vh;
+  padding: 65px 50px;
+}
+
+#phones {
+  height: 300vh;
+}
+
+.samsung {
+  height: 45%;
+  background-color: #669bbc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.iphone {
+  height: 45%;
+  background-color: #fdf0d5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.showcase {
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  width: 50%;
+}
+
+.showcase img {
+  height: 200px;
 }

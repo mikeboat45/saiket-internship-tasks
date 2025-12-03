@@ -8,3 +8,10 @@ For this task, I developed a clean and interactive portfolio website using HTML,
 ## Task 2: E-commerce Product Page
 
 For this task, I built a responsive product page for an e-commerce website. The goal was to design a clean and intuitive interface that showcases product details, high-quality images, pricing, and a clear “Add to Cart” action. This page focuses on giving online shoppers a smooth and engaging experience, with a layout that highlights the product and makes interaction effortless.
+
+## Task 3: Simple Navigation Menu
+
+For this task, I created a simple multi-section webpage for a fictional tech event. The project features a clean navigation menu that links to different parts of the page, including the event overview, speakers, agenda, venue, and contact section.
+This task focused on learning how to create hyperlinks, organize content into sections, and apply basic CSS styling to build a clear and user-friendly navigation experience. The menu allows users to easily move between sections, improving overall usability and structure
+
+

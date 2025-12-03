@@ -109,6 +109,11 @@ input[type="search"] {
   padding: 20px 0;
 }
 
+.samsung h2,
+.iphone h2 {
+  font-size: 1.8rem;
+}
+
 .showcase {
   background-color: white;
   border: none;
@@ -271,7 +276,7 @@ footer p {
   }
 
   .showcase {
-    width: 30%; /* Three items per row */
+    width: 20%;
   }
 
   #about {

@@ -37,7 +37,7 @@ header {
   background-color: #780000;
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  padding: 5px 0 10px 0;
 }
 
 header div {
@@ -99,6 +99,10 @@ input[type="search"] {
   justify-content: space-around;
 }
 
+.samsung :first-child {
+  font-size: 1.8rem;
+}
+
 .iphone {
   height: 50%;
   background-color: #fdf0d5;
@@ -108,24 +112,49 @@ input[type="search"] {
   justify-content: space-around;
 }
 
+.iphone :first-child {
+  font-size: 1.8rem;
+}
+
 .showcase {
   background-color: white;
   border: none;
   border-radius: 15px;
-  width: 50%;
+  width: 60%;
   padding-bottom: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .showcase img {
   height: 200px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.showcase :nth-child(2) {
+  font-weight: bold;
+}
+
+.showcase :nth-child(3) {
+  color: #c1121f;
+  font-weight: bold;
 }
 
 #about {
-  margin: 30px 10px;
+  margin: 10px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 #about p {
   padding: 10px 0;
+}
+
+#about button {
+  max-width: 350px;
+  align-self: center;
 }
 
 footer {
@@ -169,4 +198,11 @@ footer p {
   color: #669bbc;
   opacity: 0.3;
   font-size: 1.05rem;
+}
+
+/*-------------------------------responsive------------------------------*/
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
 }

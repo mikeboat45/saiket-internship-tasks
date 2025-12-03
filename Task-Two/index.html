@@ -8,6 +8,11 @@
       crossorigin="anonymous"
     ></script>
     <title>Phone Co.</title>
+    <link
+      rel="shortcut icon"
+      href="/Task-Two/assets/tab-icon.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="index.css" />
   </head>
@@ -20,14 +25,14 @@
           class="logo"
         />
         <div class="nav-links">
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Phones</a>
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#phones">Phones</a>
         </div>
       </nav>
       <div>
         <form action="">
-          <input type="search" placeholder="Samsung Galaxy A16" size="35" />
+          <input type="search" placeholder="Samsung Galaxy A16" size="30" />
           <button
             type="submit"
             style="
@@ -36,11 +41,11 @@
               padding-bottom: 12px;
               border: 2px;
               border-radius: 10px;
-              color: white;
+              color: #c1121f;
               font-size: 1.2rem;
             "
           >
-            <i class="fa-solid fa-magnifying-glass" styles=""></i>
+            <i class="fa-solid fa-magnifying-glass" styles=""></i>Search
           </button>
         </form>
         <i
@@ -50,7 +55,6 @@
             padding-left: 3px;
             margin-top: 3px;
             font-size: 1.5rem;
-            padding: 8px 10px;
           "
         ></i>
       </div>
@@ -68,42 +72,45 @@
         <div class="samsung">
           <h2>Samsung Phones</h2>
           <div class="showcase">
-            <img src="/Task-Two/assets/phone-img.jpg" alt="" />
-            <p>Phone Name</p>
-            <p>price</p>
+            <img
+              src="/Task-Two/assets/galaxy-z-fold-7.webp"
+              alt="galaxy-z-fold-7"
+            />
+            <p>Galaxy Z Fold7</p>
+            <p>GHC 22,690.00</p>
             <button>Add to cart</button>
           </div>
           <div class="showcase">
-            <img src="/Task-Two/assets/phone-img.jpg" alt="" />
-            <p>Phone Name</p>
-            <p>price</p>
+            <img src="/Task-Two/assets/a16.avif" alt="a16" />
+            <p>Galaxy A16 5G 128Gb</p>
+            <p>GHC 2,260.00</p>
             <button>Add to cart</button>
           </div>
           <div class="showcase">
-            <img src="/Task-Two/assets/phone-img.jpg" alt="" />
-            <p>Phone Name</p>
-            <p>price</p>
+            <img src="/Task-Two/assets/s25-ultra.webp" alt="s25-ultra" />
+            <p>Galaxy S25 Ultra</p>
+            <p>GHC 14,748.00</p>
             <button>Add to cart</button>
           </div>
         </div>
         <div class="iphone">
-          <h2>Apple Phones</h2>
+          <h2><i class="fa-brands fa-apple"></i>iPhones</h2>
           <div class="showcase">
-            <img src="/Task-Two/assets/phone-img.jpg" alt="" />
-            <p>Phone Name</p>
-            <p>price</p>
+            <img src="/Task-Two/assets/iphone_17pro.jpg" alt="iphone_17pro" />
+            <p>iPhone 17 Pro</p>
+            <p>GHC 12,460.00</p>
             <button>Add to cart</button>
           </div>
           <div class="showcase">
-            <img src="/Task-Two/assets/phone-img.jpg" alt="" />
-            <p>Phone Name</p>
-            <p>price</p>
+            <img src="/Task-Two/assets/iphone_16e.jpg" alt="iphone_16e" />
+            <p>iPhone 16e</p>
+            <p>GHC 6,795.00</p>
             <button>Add to cart</button>
           </div>
           <div class="showcase">
-            <img src="/Task-Two/assets/phone-img.jpg" alt="" />
-            <p>Phone Name</p>
-            <p>price</p>
+            <img src="/Task-Two/assets/iphone_air.jpg" alt="iphone_air" />
+            <p>iPhone Air</p>
+            <p>GHC 11,330.00</p>
             <button>Add to cart</button>
           </div>
         </div>
@@ -117,14 +124,17 @@
           simple, secure, and stress-free.
         </p>
 
-        <ul class="highlights">
-          <li>✔ Quality Smartphones</li>
-          <li>✔ Affordable Prices</li>
-          <li>✔ Fast Delivery</li>
-          <li>✔ Secure Checkout</li>
-        </ul>
+        <div>
+          <p>You can count on us for:</p>
+          <ul class="highlights">
+            <li>✔ Quality Smartphones</li>
+            <li>✔ Affordable Prices</li>
+            <li>✔ Fast Delivery</li>
+            <li>✔ Secure Checkout</li>
+          </ul>
+        </div>
 
-        <button>Browse our latest phones →</button>
+        <button>Visit a shop near you →</button>
       </section>
     </main>
     <footer>

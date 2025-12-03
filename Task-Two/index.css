@@ -12,12 +12,25 @@ body {
   color: black;
   text-align: center;
   line-height: 1.5;
-  font-family: "";
+  font-family: "Arial";
 }
 
 h2 {
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+button {
+  background-color: #c1121f;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: #780000;
 }
 
 header {
@@ -48,15 +61,33 @@ nav img {
   color: white;
   padding: 0 10px;
   text-decoration: none;
+  margin: 10px 0;
+}
+
+.nav-links a:hover {
+  color: #fdf0d5;
+}
+
+input[type="search"] {
+  height: 42px;
+  border: 5px white;
+  border-radius: 5px;
 }
 
 #home {
-  height: 30vh;
-  padding: 65px 50px;
+  height: 60vh;
+  padding: 125px 50px;
+  color: #003049;
+  font-weight: bold;
+  font-size: 1.4rem;
+  background-image: url(/Task-Two/assets/phone-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #phones {
-  height: 300vh;
+  height: 320vh;
 }
 
 .samsung {
@@ -82,6 +113,7 @@ nav img {
   border: none;
   border-radius: 15px;
   width: 50%;
+  padding-bottom: 10px;
 }
 
 .showcase img {

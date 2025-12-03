@@ -251,7 +251,12 @@ footer p {
 
 @media (min-width: 768px) {
   header {
+    flex-direction: row;
     padding: 10px 40px;
+  }
+
+  nav {
+    flex-direction: row;
   }
 
   #home {

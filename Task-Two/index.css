@@ -75,7 +75,7 @@ input[type="search"] {
 }
 
 #home {
-  height: 60vh;
+  height: auto;
   padding: 125px 50px;
   color: #003049;
   font-weight: bold;
@@ -87,33 +87,26 @@ input[type="search"] {
 }
 
 #phones {
-  height: 320vh;
+  min-height: 100vh;
+  height: auto;
 }
 
 .samsung {
-  height: 50%;
   background-color: #669bbc;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-}
-
-.samsung :first-child {
-  font-size: 1.8rem;
+  padding: 20px 0;
 }
 
 .iphone {
-  height: 50%;
   background-color: #fdf0d5;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-}
-
-.iphone :first-child {
-  font-size: 1.8rem;
+  padding: 20px 0;
 }
 
 .showcase {
@@ -123,6 +116,7 @@ input[type="search"] {
   width: 60%;
   padding-bottom: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  margin: 10px 0;
 }
 
 .showcase img {
@@ -142,7 +136,8 @@ input[type="search"] {
 
 #about {
   margin: 10px;
-  height: 50vh;
+  min-height: 50vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -201,8 +196,85 @@ footer p {
 }
 
 /*-------------------------------responsive------------------------------*/
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 600px) {
+  header {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  header div {
+    width: auto;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: row;
+  }
+
+  .nav-links a {
+    margin: 0 10px;
+  }
+
+  #home {
+    padding: 100px 50px;
+    font-size: 1.6rem;
+  }
+
+  #samsung {
+    flex-direction: column;
+  }
+
+  .showcase-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 20px;
+    min-width: 100vw;
+    width: auto;
+  }
+
+  .showcase {
+    width: 45%;
+  }
+
+  #about {
+    padding: 20px;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
+  header {
+    padding: 10px 40px;
+  }
+
+  #home {
+    padding: 150px 100px;
+    font-size: 1.8rem;
+  }
+
+  .samsung,
+  .iphone {
+    gap: 30px;
+    padding: 40px;
+  }
+
+  .showcase {
+    width: 30%; /* Three items per row */
+  }
+
+  #about {
+    padding: 40px;
+  }
+
+  .footer-info {
+    justify-content: space-around;
+    padding: 20px;
+  }
 }

@@ -1,0 +1,47 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: Helvetica;
+}
+
+/*----------------------navigation-----------------------------*/
+header {
+  background-color: #e4e6c3;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+header img {
+  max-width: 70px;
+  max-height: 70px;
+  padding-right: 40px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: #222725;
+}
+
+nav a:hover {
+  color: #121113;
+}
+
+/*--------------------hero section-------------------*/

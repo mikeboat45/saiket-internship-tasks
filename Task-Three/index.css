@@ -182,3 +182,25 @@ nav a:hover {
 }
 
 /*--------------------agenda---------------------*/
+#agenda {
+  padding-bottom: 30px;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
+  color: #222725;
+  background-color: #f7f7f2;
+}
+
+#agenda ul {
+  display: flex;
+  flex-direction: column;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/*------------------------venue and tickets------------------------*/

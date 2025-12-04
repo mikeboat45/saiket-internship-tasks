@@ -133,3 +133,52 @@ nav a:hover {
 }
 
 /*------------------speaker section-------------------------*/
+#speakers {
+  min-height: 100vh;
+  height: auto;
+  background-color: #222725;
+  color: #f7f7f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.speaker-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 90%;
+  gap: 30px;
+}
+
+.speaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  border: 1px solid #e4e6c3;
+  box-shadow: 3px 3px 7px rgba(186, 191, 144, 0.5);
+  padding-bottom: 10px;
+  border-radius: 7px;
+  color: #f7f7f2;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.speaker img {
+  width: 100%;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.speaker :nth-child(3) {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/*--------------------agenda---------------------*/

@@ -19,8 +19,12 @@ a {
 
 h1 {
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 2.2em;
   color: #222725;
+}
+h2 {
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 button {
@@ -66,7 +70,7 @@ nav a:hover {
 #home {
   background-color: #f2f2dc;
   min-height: 70vh;
-  min-width: 100vw;
+  max-width: 100vw;
   height: auto;
   display: flex;
   justify-content: center;
@@ -82,7 +86,8 @@ nav a:hover {
   align-items: center;
   justify-content: space-evenly;
   min-height: 50vh;
-  min-width: 82vw;
+  min-width: 80%;
+  height: auto;
   box-shadow: 3px 3px 7px rgba(186, 191, 144, 0.5);
   color: #222725;
 }
@@ -104,3 +109,27 @@ nav a:hover {
 }
 
 /*--------------------about------------------------*/
+#about {
+  background-color: #899878;
+  color: #f7f7f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  max-width: 100vw;
+  height: auto;
+  padding: 0 20px;
+}
+
+#about div {
+  height: 40vh;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  font-size: 1.2rem;
+}
+
+/*------------------speaker section-------------------------*/

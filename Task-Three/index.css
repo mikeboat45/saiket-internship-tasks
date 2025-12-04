@@ -13,6 +13,25 @@ body {
   font-family: Helvetica;
 }
 
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #222725;
+}
+
+button {
+  background-color: #899878;
+  color: #121113;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.05rem;
+}
+
 /*----------------------navigation-----------------------------*/
 header {
   background-color: #e4e6c3;
@@ -36,7 +55,6 @@ nav {
 
 nav a {
   padding: 10px;
-  text-decoration: none;
   color: #222725;
 }
 
@@ -45,3 +63,44 @@ nav a:hover {
 }
 
 /*--------------------hero section-------------------*/
+#home {
+  background-color: #f2f2dc;
+  min-height: 70vh;
+  min-width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  background-color: #e4e6c3;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 50vh;
+  min-width: 82vw;
+  box-shadow: 3px 3px 7px rgba(186, 191, 144, 0.5);
+  color: #222725;
+}
+
+.hero :first-child {
+  text-align: center;
+}
+
+.hero :first-child p {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.hero-buttons button:hover {
+  background-color: #121113;
+  color: #e4e6c3;
+  transform: scale(1.1);
+  margin: 5px;
+}
+
+/*--------------------about------------------------*/

@@ -1,0 +1,152 @@
+body {
+  background-color: #e4e6c3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica;
+  min-height: 100vh;
+}
+
+article {
+  height: 70vh;
+  background-color: #fff;
+  color: #f7f7f2;
+  padding: 4px;
+  border-radius: 11px;
+
+  /*---------blob----------*/
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blob {
+  position: absolute;
+  z-index: 1;
+  top: 80%;
+  left: 50%;
+  width: 450px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #899878;
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 4.5s infinite ease;
+}
+
+.blob-2 {
+  position: absolute;
+  z-index: 1;
+  bottom: 40%;
+  left: 50%;
+  width: 450px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #899878;
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 3s infinite ease;
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 98%;
+  background-color: #222725;
+  border-radius: 10px;
+  padding: 5px 10px;
+  outline: 2px solid #e4e6c3;
+  position: relative;
+  z-index: 1111;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f7f7f2;
+}
+
+.fullname {
+  display: flex;
+  gap: 10px;
+}
+
+.fullname input {
+  width: 50%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid #f7f7f2;
+  border-radius: 4px;
+  background-color: #303734;
+  color: #121113;
+  font-size: 1.05rem;
+}
+
+select {
+  color: #f7f7f2;
+  opacity: 0.5;
+}
+
+.radio p {
+  padding-bottom: 5px;
+}
+
+#check {
+  display: flex;
+  flex-direction: column;
+}
+
+#check .subscribe {
+  margin-bottom: 5px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #e4e6c3;
+}
+
+input[type="submit"] {
+  background-color: #e4e6c3;
+  color: #222725;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #899878;
+}

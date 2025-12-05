@@ -48,6 +48,9 @@ header {
   display: flex;
   align-items: center;
   padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header img {
@@ -277,4 +280,26 @@ footer {
   text-align: center;
   padding: 2px;
   font-size: 0.7rem;
+}
+
+#hamburger-toggle {
+  display: none;
+}
+
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #222725;
+  margin: 5px 0;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+nav {
+  transition: max-height 0.5s ease-in-out;
 }

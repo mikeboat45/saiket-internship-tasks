@@ -58,6 +58,49 @@
 }
 
 @media (max-width: 480px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #e4e6c3;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  nav a {
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #c7c9a6;
+  }
+
+  #hamburger-toggle:checked ~ nav {
+    max-height: 500px;
+  }
+
+  #hamburger-toggle:checked ~ .hamburger-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  #hamburger-toggle:checked ~ .hamburger-icon span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #hamburger-toggle:checked ~ .hamburger-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
   header h1 {
     font-size: 1.8em;
   }

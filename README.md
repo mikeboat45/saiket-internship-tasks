@@ -14,4 +14,11 @@ For this task, I built a responsive product page for an e-commerce website. The 
 For this task, I created a simple multi-section webpage for a fictional tech event. The project features a clean navigation menu that links to different parts of the page, including the event overview, speakers, agenda, venue, and contact section.
 This task focused on learning how to create hyperlinks, organize content into sections, and apply basic CSS styling to build a clear and user-friendly navigation experience. The menu allows users to easily move between sections, improving overall usability and structure
 
+## Task 4: Event Registration Form
+For this task, I created a registration form to complement the Tech Future Summit event webpage built in Task 3. The form allows users to enter their details and register for the event.
+It includes text fields, radio buttons, checkboxes, and a dropdown menu to gather different types of user input.
+This task helped me practice building structured HTML forms, adding basic validation to required fields, and focusing on user-friendly form layout. Integrating the registration form into the event website also improved the overall user experience by giving visitors a clear way to sign up for the event.
+
+
+
 

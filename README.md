@@ -19,6 +19,11 @@ For this task, I created a registration form to complement the Tech Future Summi
 It includes text fields, radio buttons, checkboxes, and a dropdown menu to gather different types of user input.
 This task helped me practice building structured HTML forms, adding basic validation to required fields, and focusing on user-friendly form layout. Integrating the registration form into the event website also improved the overall user experience by giving visitors a clear way to sign up for the event.
 
+## Task 5 & 6: Interactive Blogging Platform
+For this task, I built a simple blogging platform themed around the AI Future Summit 2025. This is an interactive platform that allows users to create, edit, and publish blog posts directly in the browser. I implemented dynamic interactions using HTML, CSS, and JavaScript and used localStorage as a lightweight database to store, retrieve, and manage posts.
+
+This task helped me understand how to build a functional multi-page experience, structure dynamic UI components, and implement basic CRUD operations without a backend. Integrating the blog into the event project created a more complete ecosystem for event updates and tech insights.
+
 
 
 

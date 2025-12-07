@@ -9,7 +9,7 @@
 
 const form = document.getElementById("create-form");
 
-form.addEventListener(onsubmit, function (e) {
+form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   const title = document.getElementById("title").value;
@@ -19,13 +19,13 @@ form.addEventListener(onsubmit, function (e) {
   const content = document.getElementById("content").value;
 
   const newPost = {
-    id: Date.now,
+    id: Date.now(),
     title,
     author,
     category,
     img,
     content,
-    date: new Date.toLocaleDateString(),
+    date: new Date().toLocaleDateString(),
   };
 
   let posts = JSON.parse(localStorage.getItem("posts")) || [];
@@ -36,5 +36,4 @@ form.addEventListener(onsubmit, function (e) {
   console.log("new post added successfuly");
 
   window.location.href = "index.html";
-  console.log("Post published!");
 });

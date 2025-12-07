@@ -19,22 +19,23 @@ form.addEventListener("submit", function (e) {
   const content = document.getElementById("content").value;
 
   const newPost = {
-    id: Date().now,
+    id: Date.now(),
     title,
     author,
     category,
     img,
     content,
-    date: Date().toLocaleString(),
+    date: new Date().toLocaleString(),
   };
 
   const posts = JSON.parse(localStorage.getItem("posts")) || [];
 
   posts.push(newPost);
 
-  localStorage.setItem("psots", JSON.stringify(posts));
+  localStorage.setItem("posts", JSON.stringify(posts));
   console.log(posts);
 
-  window.location.href = "index.html";
-  console.log(posts);
+  setTimeout(function () {
+    window.location.href = "index.html";
+  }, 3000);
 });

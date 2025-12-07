@@ -17,7 +17,7 @@ if (container && posts.length === 0) {
                   post.img || "/Task-Five-Six/assets/placeholder.png"
                 }" alt="Post image" class="post-image">
 
-                <h2>${post.title}</h2>
+                <h3>${post.title}</h3>
                 <p><strong>${post.author}</strong> — ${post.date}</p>
                 <p class="category">${post.category}</p>
 

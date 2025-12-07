@@ -1,6 +1,73 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
+  line-height: 1.5;
+  font-family: Helvetica;
+  background-color: #e8e8cb;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.2em;
+  color: #222725;
+}
+
+/*----------------nav-----------------*/
+header {
+  background-color: #e4e6c3;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 2px 2px 4px #899878;
+}
+
+header img {
+  max-width: 90px;
+  max-height: 70px;
+  padding-right: 40px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  padding: 10px;
+  color: #222725;
+  font-size: 1.05rem;
+}
+
+nav a:hover {
+  color: #121113;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+/*----------main---------------*/
+main {
+  min-height: 75vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .main-head {
@@ -26,6 +93,96 @@ body {
   font-size: 1.05rem;
 }
 
+#posts-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-height: 90vh;
+  margin: 30px 10px;
+  gap: 20px;
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  max-height: fit-content;
+  border: 1px solid black;
+  width: 350px;
+}
+
+.post-card img {
+  height: 150px;
+  width: 150px;
+}
+
+/*----------footer-----------*/
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e4e6c3;
+  border-top: 1px solid #121113;
+  color: #121113;
   margin-top: auto;
+}
+
+.ftop {
+  display: flex;
+  min-width: 90vw;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #222725;
+  font-size: 1.2rem;
+}
+
+.socials a:hover {
+  color: #121113;
+  font-weight: bold;
+  transform: scale(1.2);
+}
+
+hr {
+  margin: 10px 0 10px;
+}
+
+.fbtm {
+  opacity: 0.5;
+  text-align: center;
+  padding: 2px;
+  font-size: 0.7rem;
+  min-width: 90vw;
+}
+
+/*----------responsive---------------*/
+@media (max-width: 768px) {
+  footer {
+    padding: 20px 0;
+    min-height: 40vh;
+  }
+
+  .ftop {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    min-height: 30vh;
+  }
+
+  .contact {
+    padding: 50px;
+  }
 }

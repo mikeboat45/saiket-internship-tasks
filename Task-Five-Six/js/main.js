@@ -7,7 +7,7 @@ const postsContainer = document.getElementById("posts-container");
 if (emptyContainer && posts.length === 0) {
   const textDisplay = document.createElement("p");
   textDisplay.textContent =
-    "No posts yet. Click 'Create New Post' to publish your first article.";
+    "No posts yet. Click 'Write New Article' to publish your first article.";
 
   textDisplay.style.fontStyle = "italic";
   textDisplay.style.paddingTop = "20px";

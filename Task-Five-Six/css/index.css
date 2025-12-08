@@ -246,3 +246,14 @@ hr {
     padding: 50px;
   }
 }
+
+@media (max-width: 481px) {
+  #posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    padding-bottom: 20px;
+    width: 90%;
+    /* gap: 10px; */
+  }
+}

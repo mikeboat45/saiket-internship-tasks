@@ -97,7 +97,8 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-height: 90vh;
-  margin: 30px 10px;
+  width: 90%;
+  /* margin: 30px 10px; */
   gap: 20px;
 }
 
@@ -106,12 +107,45 @@ main {
   flex-direction: column;
   max-height: fit-content;
   border: 1px solid black;
-  width: 350px;
+  width: auto;
 }
 
-.post-card img {
-  height: 150px;
-  width: 150px;
+.post-image {
+  height: 40%;
+  width: 100%;
+}
+
+.card-info {
+  padding: 15px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.cardtop h3 {
+  flex: 1;
+  font-size: 1.1rem;
+}
+
+.category {
+  border: 1px solid black;
+  max-width: fit-content;
+  max-height: max-content;
+  padding: 5px;
+}
+
+strong {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+span {
+  font-style: italic;
+  font-size: 0.9rem;
 }
 
 /*----------footer-----------*/

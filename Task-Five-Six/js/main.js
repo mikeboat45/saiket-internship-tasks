@@ -14,6 +14,8 @@ if (emptyContainer && posts.length === 0) {
   emptyContainer.appendChild(textDisplay);
 } else {
   posts.forEach((post) => {
+    const excerpt = post.content.split(" ").slice(0, 20).join(" ") + "...";
+
     const cardHTML = `<article class="post-card">
                 <img src="${
                   post.img || "/Task-Five-Six/assets/placeholder.png"
@@ -28,7 +30,7 @@ if (emptyContainer && posts.length === 0) {
     }</span></p>
                 
 
-                <p class="excerpt">${post.content.substring(0, 100)}...</p>
+                <p class="excerpt">${excerpt}</p>
 
                 <a href="read.html?id=${
                   post.id

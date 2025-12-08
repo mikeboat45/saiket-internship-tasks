@@ -32,7 +32,7 @@ if (emptyContainer && posts.length === 0) {
 
                 <a href="read.html?id=${
                   post.id
-                }" class="read-btn">Read Post <i class="fa-solid fa-link"></i></a></div>
+                }" class="read-btn"><i class="fa-solid fa-link"></i> Read Post</a></div>
             </article>`;
 
     postsContainer.insertAdjacentHTML("afterbegin", cardHTML);

@@ -96,9 +96,8 @@ main {
 #posts-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  max-height: 90vh;
+  max-height: min-content;
   width: 90%;
-  /* margin: 30px 10px; */
   gap: 20px;
 }
 
@@ -106,17 +105,21 @@ main {
   display: flex;
   flex-direction: column;
   max-height: fit-content;
-  border: 1px solid black;
   width: auto;
+  background-color: #222725;
+  border-radius: 12px;
 }
 
 .post-image {
   height: 40%;
   width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .card-info {
   padding: 15px;
+  color: #f7f7f2;
 }
 
 .card-top {
@@ -126,16 +129,16 @@ main {
   width: 100%;
 }
 
-.cardtop h3 {
-  flex: 1;
-  font-size: 1.1rem;
-}
-
 .category {
-  border: 1px solid black;
+  border: 1px solid #f7f7f2;
+  border-radius: 5px;
+  font-size: 0.9rem;
   max-width: fit-content;
   max-height: max-content;
   padding: 5px;
+  background-color: #303734;
+  color: #f7f7f2;
+  opacity: 0.5;
 }
 
 strong {
@@ -146,6 +149,14 @@ strong {
 span {
   font-style: italic;
   font-size: 0.9rem;
+}
+
+.read-btn {
+  color: #f7f7f2;
+}
+
+.read-btn:hover {
+  color: blue;
 }
 
 /*----------footer-----------*/

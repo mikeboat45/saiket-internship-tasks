@@ -1,0 +1,13 @@
+@media (min-width: 767px) {
+  .project-card {
+    width: 47%;
+    height: 70vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-card {
+    width: 30%;
+    height: 70vh;
+  }
+}

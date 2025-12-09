@@ -5,9 +5,13 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .project-card {
     width: 30%;
     height: 70vh;
+  }
+
+  .project-card img {
+    height: 50%;
   }
 }

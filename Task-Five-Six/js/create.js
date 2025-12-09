@@ -1,12 +1,3 @@
-// select the form
-// form submit event
-//collect form data
-// create a new post object
-// get existing post from localStorage
-// add new post to array
-// save updated post array to localStorage
-// return to homepage
-
 const form = document.getElementById("create-form");
 
 form.addEventListener("submit", function (e) {

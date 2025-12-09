@@ -18,7 +18,7 @@ if (emptyContainer && posts.length === 0) {
 
     const cardHTML = `<article class="post-card">
                 <img src="${
-                  post.img || "/Task-Five-Six/assets/placeholder.png"
+                  post.img || "Task-Five-Six/assets/placeholder.png"
                 }" alt="Post image" class="post-image">
 
                 <div class="card-info"><div class="card-top">

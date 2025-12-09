@@ -1,0 +1,418 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ------------------Add fonts----------------------- */
+@font-face {
+  font-family: "SourceSansPro";
+  src: url(assets/fonts/SourceSansPro-Regular.otf);
+}
+
+@font-face {
+  font-family: "SourceSansPro-Light";
+  src: url(assets/fonts/SourceSansPro-ExtraLight.otf);
+}
+
+body {
+  background-color: #01161e;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+  font-family: "SourceSansPro";
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+button,
+.button {
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #003049;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+button:hover,
+.button:hover {
+  background-color: #0115;
+}
+
+/*-----------------------------navigation------------------------*/
+header {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  font-size: 1.2rem;
+  background-color: #003049;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+}
+
+.nav-brand {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.nav-menu {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 400px;
+  margin: 0 20px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  display: block;
+  color: white;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.nav-contact {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-contact:hover {
+  color: #dda15e;
+}
+
+.nav-links a:hover {
+  color: #dda15e;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+hr {
+  margin: 0;
+  border: none;
+  height: 2px;
+  background-color: #dda15e;
+}
+
+/* -----------------hero section------------------------*/
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70vh;
+  margin: 20px 0;
+  padding: 0 20px;
+  padding-bottom: 15px;
+}
+
+#home h4 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#home img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 70%;
+}
+
+/*--------------------------about section--------------------*/
+#about {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+
+#about img {
+  width: 33.33%;
+  max-width: 450px;
+  height: 100%;
+  margin-right: 15px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.about-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.about-info button {
+  max-width: 200px;
+}
+
+/*-------------------------project section----------------------------*/
+#projects {
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+#projects button,
+#projects h1 {
+  margin: 20px 0;
+}
+
+.project-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-id {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  padding: 15px;
+}
+
+.project-id:hover {
+  transform: scale(1.05);
+}
+
+.project-id a {
+  text-decoration: none;
+  color: white;
+}
+
+.project-id a:hover {
+  color: #003049;
+}
+
+.project-id img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/*--------------------contact-------------------*/
+#contact {
+  padding: 0 20px;
+}
+
+#contact .button {
+  margin: 20px 0;
+}
+
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #dda15e;
+  border-radius: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/*-------------------------footer-------------------------*/
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0115;
+  padding: 20px 0;
+}
+
+footer h4 {
+  color: #003049;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+}
+
+.socials a {
+  color: white;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  color: #003049;
+}
+
+/*------------------------------responsive---------------------------------*/
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #0115;
+    padding: 10px 0;
+  }
+
+  .nav-menu.nav-active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav-contact {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #003049;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2,
+  h3,
+  h4 {
+    font-size: 1rem;
+  }
+
+  #projects button,
+  #projects h1 {
+    margin: 15px 0;
+  }
+
+  form {
+    padding: 15px;
+    margin: 0 20px;
+  }
+
+  /* About Section */
+  #about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  #about img {
+    width: 250px;
+    height: 250px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .about-info {
+    text-align: center;
+  }
+
+  .background {
+    margin-bottom: 15px;
+  }
+
+  .skills {
+    margin-bottom: 15px;
+  }
+
+  /* Projects Section */
+  .project-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-id {
+    margin: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-id img {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer > div {
+    margin-bottom: 20px;
+  }
+}

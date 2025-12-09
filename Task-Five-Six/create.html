@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Post</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/create.css" />
+    <link
+      rel="shortcut icon"
+      href="/Task-Three/assets/tab-logo.svg"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/055e77e62f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img src="/Task-Three/assets/summit-logo.png" alt="logo" />
+      <nav>
+        <a href="/Task-Three/index.html">Home</a>
+        <a href="index.html">Blog</a>
+        <a href="edit.html">Edit Post</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Write a New Blog Article</h2>
+
+      <form id="create-form">
+        <input type="text" id="title" placeholder="Post Title" required />
+        <input type="text" id="author" placeholder="Author" required />
+
+        <select id="category" required>
+          <option value="">Select Category</option>
+          <option value="AI News">AI News</option>
+          <option value="Event Update">Event Update</option>
+          <option value="Speaker Insight">Speaker Insight</option>
+        </select>
+
+        <input type="text" id="image" placeholder="add image url (optional)" />
+        <textarea
+          id="content"
+          placeholder="Write your post here…"
+          required
+        ></textarea>
+
+        <button type="submit">Publish Post</button>
+      </form>
+    </main>
+
+    <footer>
+      <div class="ftop">
+        <div>
+          <h3>AI Summit 2025</h3>
+          <p>Shaping the future of technology, one idea at a time</p>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div id="contact">
+          <p>Have questions or need assistance? <br />Reach out to our team:</p>
+          <p>
+            Email: info@techsummit.com <br />
+            Phone: +233 55 123 4567
+          </p>
+        </div>
+      </div>
+
+      <div class="fbtm">
+        <hr />
+        <p>Tech Future Summit 2025</p>
+        <p>© 2025 TFS | All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/create.js"></script>
+  </body>
+</html>

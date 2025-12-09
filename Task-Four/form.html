@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register: AI Future Summit</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="form.css" />
+    <link
+      rel="shortcut icon"
+      href="/Task-Three/assets/tab-logo.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <article>
+      <div class="blob-2"></div>
+      <form action="#" method="post" id="form">
+        <p class="title">AI Future Summit 2025 - CEO Edition</p>
+        <p class="title">REGISTRATION</p>
+        <div class="fullname">
+          <input type="text" name="fname" id="fname" placeholder="First name" />
+          <input type="text" name="lname" id="lname" placeholder="Last name" />
+        </div>
+        <input type="email" name="email" id="email" placeholder="Email" />
+        <select name="attendance" id="attendance">
+          <option value="heading">Select attendance mode</option>
+          <option value="standard">Standard</option>
+          <option value="vip">VIP</option>
+          <option value="student">Student</option>
+        </select>
+        <div class="radio">
+          <p>Select how you will attend:</p>
+          <label for="virtual"
+            ><input
+              type="radio"
+              name="attendance"
+              id="virtual"
+              value="virtual"
+            />
+            Virtual</label
+          >
+          <label for="person"
+            ><input type="radio" name="attendance" id="person" value="person" />
+            In person</label
+          >
+        </div>
+        <div id="check">
+          <label for="subscribe">
+            <input
+              type="checkbox"
+              name="extra"
+              id="subscribe"
+              value="subscribe"
+              class="subscribe"
+              checked
+            />Subscribe to event updates
+          </label>
+          <label for="workshop">
+            <input
+              type="checkbox"
+              name="extra"
+              id="workshop"
+              value="workshop"
+            />
+            Request workshop details
+          </label>
+        </div>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Leave a message for the panel"
+        ></textarea>
+        <input type="submit" value="Submit" class="button" />
+      </form>
+      <div class="blob"></div>
+    </article>
+
+    <script src="form.js"></script>
+  </body>
+</html>

@@ -1,0 +1,290 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Arial";
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+button {
+  background-color: #c1121f;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: #780000;
+}
+
+header {
+  background-color: #780000;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0 10px 0;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav img {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-links a {
+  color: white;
+  padding: 0 10px;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.nav-links a:hover {
+  color: #fdf0d5;
+}
+
+input[type="search"] {
+  height: 42px;
+  border: 5px white;
+  border-radius: 5px;
+}
+
+#home {
+  height: auto;
+  padding: 125px 50px;
+  color: #003049;
+  font-weight: bold;
+  font-size: 1.4rem;
+  background-image: url(/Task-Two/assets/phone-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#phones {
+  min-height: 100vh;
+  height: auto;
+}
+
+.samsung {
+  background-color: #669bbc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.iphone {
+  background-color: #fdf0d5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.samsung h2,
+.iphone h2 {
+  font-size: 1.8rem;
+}
+
+.showcase {
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  width: 60%;
+  padding-bottom: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  margin: 10px 0;
+}
+
+.showcase img {
+  height: 200px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.showcase :nth-child(2) {
+  font-weight: bold;
+}
+
+.showcase :nth-child(3) {
+  color: #c1121f;
+  font-weight: bold;
+}
+
+#about {
+  margin: 10px;
+  min-height: 50vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#about p {
+  padding: 10px 0;
+}
+
+#about button {
+  max-width: 350px;
+  align-self: center;
+}
+
+footer {
+  background-color: #003049;
+  padding: 20px 0;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.shops {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shops a {
+  color: white;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+.socials a:hover {
+  color: #669bbc;
+}
+
+footer p {
+  color: #669bbc;
+  opacity: 0.3;
+  font-size: 1.05rem;
+}
+
+/*-------------------------------responsive------------------------------*/
+@media (min-width: 600px) {
+  header {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  header div {
+    width: auto;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: row;
+  }
+
+  .nav-links a {
+    margin: 0 10px;
+  }
+
+  #home {
+    padding: 100px 50px;
+    font-size: 1.6rem;
+  }
+
+  #samsung {
+    flex-direction: column;
+  }
+
+  .showcase-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 20px;
+    min-width: 100vw;
+    width: auto;
+  }
+
+  .showcase {
+    width: 45%;
+  }
+
+  #about {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    padding: 10px 40px;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+
+  #home {
+    padding: 150px 100px;
+    font-size: 1.8rem;
+  }
+
+  .samsung,
+  .iphone {
+    gap: 30px;
+    padding: 40px;
+  }
+
+  .showcase {
+    width: 20%;
+  }
+
+  #about {
+    padding: 40px;
+  }
+
+  .footer-info {
+    justify-content: space-around;
+    padding: 20px;
+  }
+}

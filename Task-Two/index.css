@@ -37,7 +37,7 @@ button:hover {
 .search-button {
   background-color: #fdf0d5;
   padding: 8px 20px 12px;
-  border: 2px solid transparent; /* Corrected border property */
+  border: 2px solid transparent;
   border-radius: 10px;
   color: #c1121f;
   font-size: 1.2rem;
@@ -97,7 +97,7 @@ input[type="search"] {
   color: #003049;
   font-weight: bold;
   font-size: 1.4rem;
-  background-image: url("./assets/phone-bg.jpg"); /* Corrected Path */
+  background-image: url("./assets/phone-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -107,7 +107,8 @@ input[type="search"] {
   min-height: 100vh;
 }
 
-.samsung, .iphone {
+.samsung,
+.iphone {
   padding: 20px 0;
 }
 
@@ -145,7 +146,7 @@ input[type="search"] {
 }
 
 .showcase img {
-  height: 200px;
+  height: 250px;
   width: 100%;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
@@ -191,14 +192,16 @@ footer {
   margin-bottom: 20px;
 }
 
-.shops, .socials {
+.shops,
+.socials {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
 
-.shops a, .socials a {
+.shops a,
+.socials a {
   color: white;
   text-decoration: none;
 }
